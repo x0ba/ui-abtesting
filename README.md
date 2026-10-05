@@ -175,7 +175,7 @@ pnpm db:migrate
 pnpm dev
 ```
 
-`pnpm db:generate` writes a migration after a schema change. A database that already has these tables is left in place: the init migration is recorded as applied, and only later migrations run. Participants enter the code from their invitation; a new code is enrolled on first use after consent. The `events` table is append-only (a trigger blocks updates and deletes).
+`pnpm db:generate` writes a migration after a schema change. `pnpm db:studio` opens Drizzle Studio against `DATABASE_URL`. A database that already has these tables is left in place: the init migration is recorded as applied, and only later migrations run. Participants enter the code from their invitation; a new code is enrolled on first use after consent. The `events` table is append-only (a trigger blocks updates and deletes).
 
 ## Related work
 
